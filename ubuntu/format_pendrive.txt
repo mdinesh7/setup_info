@@ -1,0 +1,16 @@
+# find device
+df -h
+
+# Unmount device
+sudo umount /dev/sdb1
+
+# Format USB
+
+- with ntfs
+sudo mkfs.ntfs /dev/sdb1
+
+- with ext4
+sudo mkfs.ext4 /dev/sdb1
+
+- with fat
+sudo mkfs.vfat /dev/sdb1
