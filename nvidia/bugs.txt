@@ -1,0 +1,8 @@
+Description:
+--------------------------
+nvidia-cuda-toolkit : Depends: nvidia-cuda-dev (= 10.1.243-3) but it is not going to be installed
+You might want to run 'apt --fix-broken install' to correct these.
+
+Solution:
+--------------------------
+sudo apt-get -o Dpkg::Options::="--force-overwrite" install --fix-broken
